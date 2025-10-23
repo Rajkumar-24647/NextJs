@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import "./globals.css";
+import Navigation from "./components/Navigation";
 
 
 
@@ -18,6 +19,11 @@ export default function RootLayout({
       <body
         className={`antialiased`}
       >
+      
+        
+       
+       <Navigation /> 
+    
         {children}
       </body>
     </html>
