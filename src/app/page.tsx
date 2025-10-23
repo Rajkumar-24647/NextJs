@@ -1,10 +1,10 @@
-import Image from "next/image";
+import "./globals.css";
 
 export default function Home() {
   
    return (
-    <div>
- hello raj
+    <div className="font-roboto">
+ hello raj, is this the home page..
     </div>
    )
 }

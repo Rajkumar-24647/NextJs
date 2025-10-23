@@ -1,6 +1,19 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "@/components/page";
+import {Roboto} from "next/font/google"
+import {Work_Sans} from "next/font/google"
+
+
+const roboto =  Roboto({
+  weight: "800",
+  subsets:["latin"],
+  variable: "--font-robot"
+})
+const workSans =  Work_Sans({
+  subsets:["latin"],
+  variable: "--font-work-sans"
+})
 
 
 export const metadata: Metadata = {
@@ -15,9 +28,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`antialiased`}>
+      <body className={`${roboto.variable} ${workSans.variable}`} >
         <Navbar />
-        {children}</body>
+        {children}
+        </body>
     </html>
   );
 }
