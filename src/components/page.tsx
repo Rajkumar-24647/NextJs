@@ -22,6 +22,9 @@ export default function Navbar(){
                 <li>
                     <Link href={"/services"}>Services</Link>
                 </li>
+                <li>
+                    <Link href={"/products"}>Products</Link>
+                </li>
             </ul>
         </div>
     )
