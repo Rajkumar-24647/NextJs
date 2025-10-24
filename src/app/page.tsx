@@ -4,7 +4,7 @@ export default function Home() {
   
    return (
     <div className="font-roboto">
- hello raj, is this the home page..
+ <h1>hello raj, is this the home page..</h1>
     </div>
    )
 }
